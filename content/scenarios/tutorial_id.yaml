@@ -9,7 +9,7 @@
 logbook-data: # contains all logbook messages. Invoke &ANCHOR with {type: logbook, arguments: *ANCHOR}
 # All anchors are replaced by the YAML parser upon file load, there is no UH code related to this magic.
 - &WELCOME
-  - [Message, 'Postavte na pobreží obchodný prístav, aby ste povolili ostatným lodiam navštíviť vašu osadu.']
+  - [Message, Bangun sebuah gudang di pantai untuk mengijinkan kapal dagang untuk berkunjung di pemukiman kamu.]
   - '
 
 
@@ -18,119 +18,119 @@ logbook-data: # contains all logbook messages. Invoke &ANCHOR with {type: logboo
   - - Gallery
     - [content/gfx/uh.png]
   - [Pagebreak]
-  - [Headline, Vitaj v Unknown Horizons!]
+  - [Headline, Selamat datang di Unknown Horizons!]
   - [Image, content/gui/images/background/hr.png]
   - '
 
 
     '
-  - Toto je tvoj denník, tu sú uložené dôležité informácie o momentálnom scenáre.
-  - Taktiež môžeš tento denník otvoriť kedykoľvek chceš tlačidlom pod mini-mapov v pravom hornom rohu obrazovky. Odteraz sa okolie minimapy bude volať "Prehľad".
+  - Ini jurnal kamu, dimana informasi penting mengenai skenario berlangsung disimpan. Sebuah ringkasan dari setiap tugas baru akan muncul sebagai sebuah tombol notifikasi dekat sebelah kiri tangan dari layar. Anda dapat mengarahkan mouse di atas notifikasi untuk membaca ringkasan, atau klik tombol tersebut untuk membuka jurnal.
+  - Anda dapat juga membuka kembali jurnal kapan saja dengan mengklik tombol di bawah peta kecil, di atas kanan layar Anda. Sekarang, kita akan menunjukan ke area ini yang berisi peta kecil, bermacam tombol dan tab sebagai gambaran ikhtisari.
   - - Gallery
     - [content/gui/icons/widgets/minimap/captainslog.png]
   - '
 
-    Pre zobrazenie vášej prvej úlohy obráťte na ďalšiu stranu denníku použitím tlačidla v dolnej časti - Vyzerá to takto:'
+    Untuk melihat tugas pertama kamu, beralih ke halaman selanjutnya dari Jurnal Anda menggunakan tombol di bagian bawah halaman yang berlawanan - terlihat seperti ini :'
   - - Gallery
     - [content/gui/images/buttons/parrow_right.png]
   - [Pagebreak]
   - '
 
-    Ak máte nejaké nápady o tom ako tento tutorial môže byť vylepšený alebo ste narazili na nejakú chybu, prosím povedzte nám.'
+    Jika Anda mempunyai beberapa masukan mengenai bagaimana tutorial ini dapat dikembangkan, atau jika Anda menemukan beberapa kesalahan, Mohon beritahu kami.'
   - '
 
-    Navštívte nás na www.unknown-horizons.org pre kontaktovanie tímu.'
+    Kunjungi www.unknown-horizons.org untuk menemukan bagaimana menghubungi tim kami.'
   - ''
-  - A teraz, poďme hrať!
+  - Dan sekarang, Ayo mulai permainannya!
   - [Pagebreak]
-  - [Headline, 'NOVÁ ÚLOHA: VYTVORTE OSADU']
+  - [Headline, 'TUGAS BARU: Buat sebuah bangunan pemukiman']
   - [Image, content/gui/images/background/hr.png]
-  - Tvoja loď je na mori, naložená tovarom ktoré budeš potrebovať na založenie novej osady.
-  - Pre pohyb lode ju najprv vyberte pomocou ľavého tlačidla myši a pravým tlačidlom myši zadajte miesto, kde sa chcete plaviť.
-  - Akonáhle budete v blízkosti pobrežia, tlačidlo postaviť osadu na karte pohľadu, bude aktívne.
+  - Kapal kamu berada di laut, dimuat suplai yang kamu akan butuhkan untuk mendirikan sebuah bangunan pemukiman baru.
+  - Untuk mengerakan kapal kamu, pilih kapal dengan klik kiri kemudian klik kanan pada lokasi kamu inginkan untuk berlayar.
+  - Sekali kamu mendekati pantai, tombol 'Pembangunan Pemukiman'  di gambaran ikhtisari akan menjadi aktif.
   - - Gallery
     - [content/gui/icons/ship/anchor.png]
-  - Kliknutím tohto tlačidla vám ukáže prehľad prístavu, prvej budovy, ktorá je potrebná na postavenie osady.
-  - Prístav musí byť postavený na pobreží aby povolil lodia navštíviť dok. Nájdite dobrú lokáciu a potom kliknite ľavým tlačidlom myši pre postavenie dôležitej budovy.
+  - Mengklik tombol ini akan menampilkan sebuah pratinjau dari gudang, Bangunan pertama memerlukan sebuah pemukiman baru. Dengan kamu menggerakan kursor sekitar, kamu akan melihat sebuah pratinjau  yang berarsir merah ketika bangunan tersebut berada di daerah yang tidak cocok.
+  - Gudang membutuhkan untuk diposisi di pantai agar kapal bisa ke dermaga. Jadi, cari lokasi bagus kemudian klik kiri to menempatkan bangunan penting ini.
   - ''
-  - [BoldLabel, 'Úloha: Vybuduj na pobreží obchodný prístav.']
+  - [BoldLabel, 'Task: Bangun sebuah gudang di pantai.']
 
 - &LUMBERJACK
-  - [Message, Postavte drevorubačov stan a spojte ho s prístavom.]
-  - [Headline, 'NOVÁ ÚLOHA: POSTAVTE DREVORUBAČSKÝ STAN']
+  - [Message, Bangun sebuah tenda penebang pohon dan hubungkan itu menuju ke gudang.]
+  - [Headline, 'TUGAS BARU: BANGUN SEBUAH TENDA PENEBANG POHON']
   - [Image, content/gui/images/background/hr.png]
-  - Zásoby a konštrukčné materiály boli vyložené z vašej lode a bezpečne uchované vo vašom novom prístave. Teraz je čas na to aby ste postavili niekoľko základných budov začnúc drevorubačskou chatou.
-  - Drevorubači pokácajú stromy okolo ich stanov a spracovať ich na dosky, ktoré sa dajú použiť na výstavbu alebo ako položka pre obchod.
-  - Pre postavenie drevorubačského stanu, otvorte stavebné menu a kliknutím na tlačidlo pod minimapou alebo stlačením klávesy 'B', prednastavenou skratkou.
+  - Persedian dan material konstrusi dapat dibongkar dari kapal kamu dan taruh secara aman di gudang baru kamu. Sekarang  waktu untuk membangun beberapa bangunan dasar, memulai dengan sebuah tenda penebang pohon.
+  - Para penebang akan menebang pohon dari daerah berhutan sekitar tenda mereka dan memulai proses pengolahan kayu untuk memproduksi papan, untuk kegunaan di konstruksi atau sebagai sumber daya perdagangan.
+  - Untuk membangun sebuah tenda penebang pohon, buka Menu Bangunan dengan mengklik tombol di bawah peta mini atau tekan 'B' sebagai pintasan default.
   - - Gallery
     - [content/gui/icons/widgets/minimap/build.png]
-  - Stavebné menu je zoradené do stupňov. Prvý stupeň je momentálne jediný prístupný vám. Ako sa vaša civilizácia bude vylepšovať dostanete prístup k budovám vyššieho stupňa.
+  - Menu bangunan diurut berdasarkan beberapa tingkatan dan seperti keadaan kamu sekarang adalah sebuah pemukiman baru, Bangunan tingkat pertama hanya satu jenis tersedia untuk kamu; Dengan peradaban kamu maju, kamu akan memperoleh akses ke tingkat yang lebih tinggi dan mampu membangun bangunan yang jenis lebih luas.
   - [Pagebreak]
   - ''
-  - Nájdite dobre zalesnenú plochu pre drevorubača potom kliknite 'Drevorubačský stan' z listu budov a postavte ho do tejto plochy.
-  - Neskôr v hre budete môcť vytvoriť zalesnenú plochu sadením stromov, ale keďže to stojí peanieze, mali by ste používať to čo vám príroda dá!
-  - Hociaké budovy, ktoré zbierajú materiál alebo niečo produkujú potrebujú cestu, ktorá je pripojená ku skladisku. Inak nebudú produkty vyzdvihnuté.
-  - Ak máš postavenú Drevorubačskú Chatrč. Musíš ju spojiť so skladom. Takže klikni na tlačidlo "cesty" následne klikni a ťahaj svoju cestu od Drevorubačskej Chatrče až po sklad.
+  - Cari sebuah lokasi yang bagus untuk para penebang kita berkerja kemudian pilih 'tenda penebang pohon' dari list bangunan di gambaran ikhtisari dan tempatkan bangunan tersebut.
+  - Kemudian di dalam permaina kamu mungkin ingin membuat daerah hutang dengan menanam pohon - pohon, tapi karena itu membutuhkan uang, kamu sebaiknya menggunakan apa alam yang telah sediakan untuk sementara waktu!
+  - Ada beberapa sumber daya yang dikumpulkan atau bangunan produksi membutuhkan sebuah jalur yang terhubung ke sebuah gudang atau bentuk penyimpanan lainnya, jika tidak, barang yang diproduksi tidak akan diambil.
+  - Jadi, sekali tenda penebang pohon kamu berada diposisinya, hubungkan bangunan tersebut ke gudang kamu denga membuka bangunan menu kemudian mengklik  tombol 'Jalur'. Sekarang kamu dapat mengklik dan menyeret dengan mouse untuk menggambar rute dari jalur kamu diantara tenda penebang pohon dan gudang kamu.
   - ''
-  - [BoldLabel, 'Úloha: Postav Drevorubačskú Chatrč a spoj ju so Skladom.']
-  - Ak je budova spojená so Skladom, uvidíš robotníka, ktorý vyzdvihne novo vyrobené produkty a pripravý ich pre obchod alebo stavbu.
+  - [BoldLabel, 'Task:  Bangun sebuah tenda penebng pohon di sebuah daerah berhutan dan hubungkan bangunan tersebut ke gudang kamu.']
+  - Sekali bangunan - bangunan tersebut terhubung. Kamu akan melihat pengumpul tiba untuk mengambil papan - papan kamu yang baru diproduksi dan kirim beberapa papan tersebut ke gudang, siap untuk digunakan di konstruksi atau dagang.
   - - Gallery
     - [content/gui/icons/buildmenu/008.png, content/gui/icons/buildmenu/015.png, content/gui/icons/resources/32/004.png]
 
 - &FOOD
-  - [Message, Postav Lovecký kemp a Rybársku chatrč a spoj ju so Skladom.]
-  - [Headline, 'NOVÁ ÚLOHA: ZÁSOBOVANIE JEDLOM']
+  - [Message, Bangun sebuah tenda pemburu dan sebuah tenda nelayan. hubungkan keduanya ke gudang.]
+  - [Headline, 'TUGAS BARU: PERSEDIAN MAKANAN']
   - [Image, content/gui/images/background/hr.png]
-  - Ďalej budete musieť postaviť niektoré základné budovy, ktoré budú potrebovať jedlo, pretože ľudia sú veľmi hladný.
-  - Dostupné budovy pre prvú úroveň sú Lovecký Tábor a Rybárska Chatrč.
-  - Lovec loví zvierata v lese to znamená, že potrebuje les.
-  - Všimni si, že môžeš postaviť Lovecký kemp blízko Drevorubačskej Chatrče.
-  - Stáva sa, že zvieratá sa nemnožia rýchlo alebo sa nevedia dostatočne schovať.
-  - 'Záver: Lovecký kemp nie je spolahlivý v dlhodobom zásobovaní.'
+  - Kamu akan membutuhkan beberapa kumpulan tempat produksi makanan juga, karena orang secara umum (dan pada khususnya para pelaut) sangat lapar.
+  - Kumpulan tempat produksi makanan pada tingkat pertama adalah tenda pemburu dan tenda nelayan.
+  - Pemburu memburu binatang di dalam hutan, jadi ini membutuhkan pohon - pohon dekatnya.
+  - Catat yang kamu dapat menaruh tenda pemburu dekat dengan hutan para penebang kayu.
+  - Ini bisa dilakukan kalau para binatang tidak berkembang biak cukup cepat atau hanya bersembunyi dengan baik.
+  - 'Kesimpulan: Tenda pemburu tidak terlalu handal jika kamu ingin persedian berkelanjutan.'
   - [Pagebreak]
   - '
 
-    Rybár potrebuje pláž a ryby v dosahu.'
-  - On vyrobí malé loďky a bude chytať ryby.
-  - Jedná sa o nepretržitý zdroj potravy ale výrobá trvá dlhšie.
-  - Malá osada ako tvoja môže používať obe spoločnosti a tým môže dosiahnuť lepší pomer výhod a nevýhod.
+    Nelayan membutuhkan sebuah letak bangunan pantai seperti gudang dan kumpulan ikan di jangkuannya.'
+  - Dia akan membangun sebuah perahu dayung kecil dan menangkap beberapa ikan.
+  - Ini sebuah persedian sangat konstan pada biaya dari sebuah waktu produksi yang sedikit lama per unit dari makanan.
+  - Sebuah pemukiman kecil seperit kamu punya dapat mengunakan kedua pengumpulan tempat makanan tersebut, dan kamu dapat lebih menyeimbangkan pro dan kontra jika kamu melihat arahan perbandingan tersebut.
   - ''
-  - [BoldLabel, 'Úloha: Postav Lovecký Kemp a Rybársku Chatrč.']
-  - Nezabudni ich pripojiť so Skladom!
+  - [BoldLabel, 'Tugas: Bangun sebuah tenda pemburu dan sebuah tenda nelayan.']
+  - Jangan lupa untuk menghubungkan keduany ke gudang kamu dengan jalanan kecil!
   - - Gallery
     - [content/gui/icons/buildmenu/011_h.png, content/gui/icons/buildmenu/009_h.png, content/gui/icons/resources/32/005.png]
 
 - &MAINSQUARE
-  - [Message, 'Postav Tržnicu. Vyber oblasť, ktorá nie je obsadená ekonomickými budovami.']
-  - [Headline, 'NOVÁ ÚLOHA: POSTAV TRŽNICU']
+  - [Message, Bangun sebuah alun - alun. Pilih sebuah area tanpa bangunan perekonomian.]
+  - [Headline, 'TUGAS BARU: ALUN - ALUN']
   - [Image, content/gui/images/background/hr.png]
-  - Vaši obyvatelia potrebujú tržnicu odkiaľ budú zberať tovar.
-  - To znamená, že budú potrebovať cestu medzi ich domom a tržnicou. Taktiež tržnica sama o sebe sa správa ako cesta, okolité domy nepotrebujú cestu.
-  - Všetok tovar v tvojom skladisku je dostupný v tomto tržisku, aby obyvatelia nemuseli chodiť k rybárovi alebo dokonca do skladiska.
+  - Para penduduk kamu membutuhkan sebuah alun - alun dimana mereka dapat mengambil barang mereka dari situ.
+  - 'Ini berarti mereka membutuhkan sebuah jalan kecil yang menghubungkan dari rumah mereka ke alun - alun. Catatan: Alun - alun tersebut bertindak sebagai jalan juga, karena itu tenda berdekatan alun - alun tidak membutuhkan sebuah jalan setapak pemisah.'
+  - Semua barang - barang di dalam gudang kamu tersedia di 'plaza' ini, jadi para penduduk kamu tidak membutuhkan berjalan kaki ke tenda nelayan  atau bahkan ke gudang.
   - - Gallery
     - [content/gui/icons/buildmenu/004_h.png]
-  - Mali by ste sa vyhnúť stavaniu osadenstva blízko svojich drevorubačských chatŕč keďže stany zmenšia zalesnenú plochu.
-  - Spoločnosti nepotrebujú prístup k stanom, preto nepotrebujete vybudovať cestu medzi tržiskom a napr. drevorubackým stanom.
+  - You should avoid placing your main settlement tents too close to your lumberjacks because building tents will clear away the trees that your lumberjack needs to produce boards.
+  - Companies work without being connected to the tents, so you don't need to build a road between the Main Square and e.g. your Lumberjack's Tent.
   - ''
-  - [BoldLabel, 'Úloha: Postav tržnicu.']
+  - [BoldLabel, 'Task: Build a Main Square.']
   - [Pagebreak]
   - '
 
-    Teraz sa bližšie pozrime na tržnicu.'
+    Now let''s have a closer look at the Main Square.'
   - - Gallery
     - [content/gui/icons/tabwidget/warehouse/account_a.png]
-  - V záložke "Účet" môžete vidieť prehľad financí vášho ostrova, ktorý zahrňuje všetky platby, ktoré platíte a všetky dane, ktoré dostávate.
-  - Položky "Nákup" a "Predaj" ukazujú Vašu obchodnú bilanciu a budú vysvetlené neskôr.
-  - Pokiaľ je vaša bilancia kladná, ste v zisku.
+  - In the 'Account' tab you get a balance sheet of this island, featuring all costs you pay and all taxes you earn.
+  - The items 'Sale' and 'Buy' refer to your trading balance and will be explained later on.
+  - If your balance is positive, you all-in-all make a profit.
   - - Gallery
     - [content/gui/icons/tabwidget/mainsquare/inhabitants0_a.png]
-  - ďalej sú tu záložky odpovedajúce jednotlivým úrovňam. Tu môžete sledovať štatistiky o vašich obyvateľoch. Tu môžete nastaviť celkovú daň pre každú úroveň a povoliť alebo zakázať obyvateľom na danej úrovni postúpiť do vyššej úrovne.
+  - In the different tier overview tabs you can see statistics about your inhabitants. You also set the tier-specific global tax here and allow or deny inhabitants of this tier to upgrade to the next higher one.
 
 - &FIRSTTENT
-  - [Message, Postavte stan a prepojte ho s jeho tržiskom ak je to potrebné.]
-  - [Headline, 'NOVÁ ÚLOHA: OBYTNÉ BUDOVY']
+  - [Message, Build a Tent and connect it to the Main Square if necessary.]
+  - [Headline, 'NEW TASK: RESIDENTIAL BUILDINGS']
   - [Image, content/gui/images/background/hr.png]
-  - Osadníci chcú mať strechu nad hlavou, inak ich nenapadne usadiť sa vo vašom meste! Potrebujete im zaobstarať stany.
+  - Settlers want to have a roof over their heads, else they won't even think of living in your city! You need to provide tents.
   - - Gallery
     - [content/gui/icons/buildmenu/003_h.png]
   - Tents are the basic residential buildings. Your inhabitants will want to upgrade it when they reach higher tiers.
@@ -650,11 +650,9 @@ events:
 
 metadata:
   author: The UH team
-  description: 'Výučba:
-
-    Postavte sovju prvú osadu a naučte sa hrať!'
-  difficulty: Výučba
-  locale: sk
+  description: Bangun pemukiman pertama kamu dan belajar bagaimana cara bermain!
+  difficulty: Tingkat kesulitan skenario.
+  locale: id
   mapfile: development.sqlite
   original: content/scenarios/tutorial_en.yaml
-  translation_status: 59 translated messages, 129 untranslated messages.
+  translation_status: 48 translated messages, 140 untranslated messages.

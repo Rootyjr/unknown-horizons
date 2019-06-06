@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # ###################################################
 # Copyright (C) 2008-2017 The Unknown Horizons Team
 # team@unknown-horizons.org
@@ -95,16 +96,16 @@ class VERSION:
 	RELEASE_VERSION = get_git_version()
 	# change for release:
 	IS_DEV_VERSION = True
-	#RELEASE_VERSION = u'2017.2'
+	#RELEASE_VERSION = u'2019.1'
 
 	REQUIRED_FIFE_MAJOR_VERSION = 0
 	REQUIRED_FIFE_MINOR_VERSION = 4
-	REQUIRED_FIFE_PATCH_VERSION = 1
+	REQUIRED_FIFE_PATCH_VERSION = 2
 
 	REQUIRED_FIFE_VERSION = (REQUIRED_FIFE_MAJOR_VERSION, REQUIRED_FIFE_MINOR_VERSION, REQUIRED_FIFE_PATCH_VERSION)
 
 	## +=1 this if you changed the savegame "api"
-	SAVEGAMEREVISION = 76
+	SAVEGAMEREVISION = 77
 	SAVEGAME_LEAST_UPGRADABLE_REVISION = 76
 
 	@staticmethod
@@ -672,7 +673,7 @@ class MULTIPLAYER:
 
 
 class NETWORK:
-	SERVER_ADDRESS = "master.unknown-horizons.org"
+	SERVER_ADDRESS = "207.180.251.79"
 	# change port to 2022 for development server updated after UH commits
 	SERVER_PORT = 2002
 	CLIENT_ADDRESS = None # type: Optional[str]
@@ -742,6 +743,7 @@ LANGUAGENAMES = _LanguageNameDict({
 	"uk"    : ('Українська', 'Ukrainian'),
 	"vi"    : ('Tiếng Việt', 'Vietnamese'),
 	"zh_CN" : ('简化字', 'Simplified Chinese'),
+	"zh_Hant" : ('繁體字', 'Traditional Chinese'),
 	"zh_TW" : ('繁體字', 'Traditional Chinese'),
 	"zu"    : ('IsiZulu', 'Zulu'),
 })

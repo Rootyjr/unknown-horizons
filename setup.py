@@ -26,11 +26,13 @@ import glob
 import json
 import os
 import platform
+import sys
 from distutils.command.build import build
 from distutils.core import setup
 from distutils.spawn import find_executable
 from shutil import copytree, rmtree
 
+import horizons
 from horizons.constants import VERSION
 from horizons.ext import polib
 
@@ -94,7 +96,7 @@ class _build_i18n(distutils.cmd.Command):
 	def generate_mo_files(self, domain, po_dir):
 		if not os.path.isdir(po_dir):
 			return []
-		po_files = glob.glob("{}/*.po".format(po_dir))
+		po_files = sorted(glob.glob("{}/*.po".format(po_dir)))
 		if po_files and not find_executable('msgfmt'):
 			raise RuntimeError(
 				"Can't generate language files, needs msgfmt. "
@@ -142,6 +144,12 @@ class _build_i18n(distutils.cmd.Command):
 		self.distribution.data_files.append((os.path.join('share', 'locale'), [stats_filename]))
 
 		return mo_files
+
+	def generate_atlases(self, size):
+		import subprocess
+		horizons_path = os.path.dirname(horizons.__file__)
+		args = [sys.executable, os.path.join(horizons_path, 'engine', 'generate_atlases.py'), str(size)]
+		process = subprocess.Popen(args)
 
 	def run(self):
 		"""
@@ -219,6 +227,8 @@ class _build_i18n(distutils.cmd.Command):
 			if os.path.exists(os.path.join("content", "lang")):
 				rmtree(os.path.join("content", "lang"))
 			copytree(os.path.join("build", "mo"), os.path.join("content", "lang"))
+
+		self.generate_atlases(2048)
 
 
 build.sub_commands.append(('build_i18n', None))
